@@ -1,0 +1,49 @@
+// Headings
+//
+// All HTML headings, `<h1>` through `<h6>`, are available. `%h1` through `%h6`
+// classes are also available, for when you want to match the font styling of a
+// heading but still want your text to be displayed inline.
+//
+// Markup: headings-h.twig
+//
+// Style guide: base.headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: rhythm(1);
+  color: $headings-color;
+}
+
+h1,
+%h1 {
+  @include adjust-font-size-to($h1-font-size);
+}
+
+h2,
+%h2 {
+  @include adjust-font-size-to($h2-font-size);
+}
+
+h3,
+%h3 {
+  @include adjust-font-size-to($h3-font-size);
+}
+
+h4,
+%h4 {
+  @include adjust-font-size-to($h4-font-size);
+}
+
+h5,
+%h5 {
+  @include adjust-font-size-to($h5-font-size);
+}
+
+h6,
+%h6 {
+  @include adjust-font-size-to($h6-font-size);
+}

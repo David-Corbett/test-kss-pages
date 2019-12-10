@@ -1,0 +1,62 @@
+// Colors and Sass
+//
+// Documentation for colors and Sass mixins and variables.
+//
+// Weight: -1
+//
+// Style guide: sass
+
+// Initialization partial
+//
+// To make it easier to use all variables and mixins in any Sass file in this
+// project, each .scss file has a `@import 'init';` declaration. This also
+// stops potential errors from implicit importing of partials. The _init.scss
+// file is in charge of importing all the other partials needed for the
+// project.
+//
+// The initialization partial is organized in this way:
+// - First we set any shared Sass variables.
+// - Next we import Sass modules.
+// - Last we define our custom mixins for this project.
+//
+// Weight: -1
+//
+// Style guide: sass.init
+
+
+// Variables' values, define colours and various sizes for text etc so we load them first.
+@import "0_global/variables";
+
+
+// 3rd party libraries
+//
+// The following sass modules are shared with all .scss files:
+// - [Compass](http://compass-style.org/)
+// Compass is a Stylesheet Authoring Environment that makes your website design simpler to implement
+// and easier to maintain. Compass is no longer actively maintained and has traditionally been loaded
+// as a sass module via ruby. However, this approach doesn't work with node sass (which we use to
+// compile our code, so we instead load the mixins and parts of compass that are useful, that being the
+// code which generates vertical rhythm.
+//
+// Style guide: sass.modules
+@import "0_global/compass-vr/compass";
+
+
+// Mixins
+//
+// Custom mixins used on this site.
+//
+// Weight: 1
+//
+// Style guide: sass.mixins
+@import '0_global/visually-hidden/visually-hidden';
+
+
+// Functions
+//
+// Custom functions used on this site.
+//
+// Weight: 1
+//
+// Style guide: sass.functions
+@import '0_global/image-url/image-url';
