@@ -1,12 +1,13 @@
 {
   "name": "test-kss-pages",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Create npm package",
   "scripts": {
     "––––––– CSS SCRIPTS": "–––––––––––––",
     "css": "npm-run-all scss-dev",
     "scss-dev": "mkdir -p css && node-sass --source-map true --source-comments true --source-map-contents true --output-style expanded -o css src/scss",
     "scss-prod": "mkdir -p css && node-sass --no-source-map --output-style compressed -o css src/scss",
+    "scss-styleguide": "mkdir -p styleguide/css && node-sass --no-source-map --output-style compressed -o styleguide/css src/scss",
     "kss": "kss --config config/kss-config.json",
     "docs": "gh-pages -d styleguide",
     "––––––– WATCH SCRIPTS": "–––––––––––––",
@@ -26,7 +27,9 @@
     "url": "https://github.com/David-Corbett/test-kss-pages/issues"
   },
   "homepage": "https://github.com/David-Corbett/test-kss-pages#readme",
-  "dependencies": {},
+  "dependencies": {
+    "np": "^5.2.1"
+  },
   "devDependencies": {
     "autoprefixer": "^9.6.4",
     "breakpoint-sass": "^2.7.1",

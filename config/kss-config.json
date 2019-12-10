@@ -9,7 +9,7 @@
 
   "//": "The css and js paths are URLs relative to the style guide destination.",
   "css": [
-    "../css/styles.css"
+    "css/styles.css"
   ],
   "js": [],
 

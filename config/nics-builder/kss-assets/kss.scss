@@ -213,11 +213,8 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
       overflow: auto;
       padding: 0 10px 0 20px;
       border-bottom: 0;
-      background-image: url(noise-low.png), -ms-radial-gradient(#fff, #eee);
-      background-image: url(noise-low.png), -o-radial-gradient(#fff, #eee);
-      background-image: url(noise-low.png), -webkit-radial-gradient(#fff, #eee);
-      background-image: url(noise-low.png), radial-gradient(#fff, #eee);
-      box-shadow: inset -10px 0 10px -10px rgba(0,0,0,0.7);
+      box-shadow: inset -6px 0 3px -6px rgba(25,25,25,0.7);
+      background-colour: #fefefe;
     }
   }
 }
@@ -728,6 +725,10 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
   pre.hljs code {
     color: inherit;
+  }
+
+  .hljs code {
+    text-shadow: none;
   }
 
   @import '../node_modules/highlight.js/styles/vs2015';
