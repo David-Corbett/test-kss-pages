@@ -10,5 +10,8 @@
   "devDependencies": {
     "highlight.js": "^9.16.2",
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "test-kss-pages": "^0.1.0"
   }
 }
